@@ -34,6 +34,7 @@ let
   home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
   plasma-manager = builtins.fetchTarball "https://github.com/nix-community/plasma-manager/archive/trunk.tar.gz";
   desktopBackground = builtins.fetchurl "https://raw.githubusercontent.com/ParrotSec/parrot-wallpapers/refs/heads/master/backgrounds/hackthebox.jpg";
+  launcherIcon = builtins.fetchurl "https://raw.githubusercontent.com/ParrotSec/parrot-themes/refs/heads/master/icons/hackthebox/start-here.svg";
 
   # Change these six lines to make this NixOS configuration file your own
   systemUser = "@@username@@";
@@ -1460,7 +1461,7 @@ cfgtail = """  # PAM configuration
                 name = "org.kde.plasma.kickoff";
                 config = {
                   General = {
-                    icon = builtins.fetchurl "https://raw.githubusercontent.com/ParrotSec/parrot-themes/refs/heads/master/icons/hackthebox/start-here.svg";
+                    icon = launcherIcon;
                     alphaSort = true;
                   };
                 };
