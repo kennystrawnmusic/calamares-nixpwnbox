@@ -154,6 +154,7 @@ in
     "nixos=https://github.com/NixOS/nixpkgs/archive/master.tar.gz"
     "nixos-config=/etc/nixos/configuration.nix"
   ];
+  
 """
 cfgbootefi = """  # Bootloader.
   boot.loader.systemd-boot.enable = true;
