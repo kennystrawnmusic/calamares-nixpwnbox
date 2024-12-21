@@ -36,7 +36,7 @@ let
   desktopBackground = builtins.fetchurl "https://raw.githubusercontent.com/ParrotSec/parrot-wallpapers/refs/heads/master/backgrounds/hackthebox.jpg";
   launcherIcon = builtins.fetchurl "https://raw.githubusercontent.com/ParrotSec/parrot-themes/refs/heads/master/icons/hackthebox/start-here.svg";
 
-  # Change these six lines to make this NixOS configuration file your own
+  # Change these five lines to make this NixOS configuration file your own
   systemUser = "@@username@@";
   systemHostname = "@@hostname@@";
   systemTime = "@@timezone@@";
