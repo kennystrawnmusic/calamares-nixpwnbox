@@ -1748,7 +1748,7 @@ cfgtail = """  # PAM configuration
         };
       })
     ];
-
+  };
   system.stateVersion = "@@nixosversion@@";
 }
 """
